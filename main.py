@@ -51,6 +51,7 @@ _STORES: Dict[str, List[str]] = {
     "ghfarma":          [sys.executable, "-m", "markets.ghfarma.scraper_ghfarma"],
     "levitta":          [sys.executable, "-m", "markets.levitta.scraper_levitta"],
     "dinamica":         [sys.executable, "-m", "markets.dinamica.scraper_dinamica"],
+    "facilita":         [sys.executable, "-m", "markets.facilita.scraper_facilita"],
 }
 
 # Stores whose EAN must be enriched from product pages after scraping
@@ -64,6 +65,7 @@ _EAN_ENRICHERS: Dict[str, List[str]] = {
     "novamed":   [sys.executable, "-m", "markets.novamed.enrich_ean_novamed"],
     "pharmed":   [sys.executable, "-m", "markets.pharmed.enrich_ean_pharmed"],
     "dinamica":  [sys.executable, "-m", "markets.dinamica.enrich_ean_dinamica"],
+    "facilita":  [sys.executable, "-m", "markets.facilita.enrich_ean_facilita"],
 }
 
 
